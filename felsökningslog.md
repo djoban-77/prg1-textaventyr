@@ -1,7 +1,7 @@
 ## [Datum] – [Kort titel på problemet]
 
 **Vad gick fel:**
-[Beskriv problemet konkret]
+[Beskriv problemet konkret] 
 
 **Varför:**
 [Din analys av grundorsaken]
