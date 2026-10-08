@@ -11,3 +11,4 @@ while there we get two choices
    to either change history and become supremme overlords.
    or do nothing
 
+I decided to add a mysterious key in the story to add a little bit of substance, cuz in the previously the story wasn't really flowing well. So I hoped with adding the key the story would flow a little bit better. 

@@ -7,56 +7,71 @@ print(f"welcome, {name}! ")
 print(f"{name}, you are about to begin a strange adventure")
 print(f"good luck, {name}! ")
 
-print("You are exploring a mysterious forest when you discover an incient temple")
+#start of the story
+print("You are exploring a mysterious forest.")
+print("You discover an incient temple.")
+
 choice1 = input("Do you ente the temple or leave? ")
 
 if choice1 == "enter":
-    print("You step inside thee temple.")
-    print("Suddenly the ground begins to shake! ")
+    print("You enter the temple.")
+    print("Suddenly the entrance disappears! ")
+
+    #The player finds a key
+    print("You look around and find a strange golden key.")
+    has_key = True
+    print("You put the key in your pocket.")
 
     choice2 = input("Do you go in deeper into the temple or go back? ")
 
     if choice2== "deeper":
-       print("You run depper into the temple.")
-       print("You find a strange glowing portal.")
+       print("You walk depper into the temple.")
+       print("You discover a mysterious door.")
 
-       choice3 = input("Do you enter the portal or stay? ")
+       if has_key:
+           print("The golden key fits perfectly into the door! ")
 
-       if choice3 == "enter":
-          print("You step through the portal.")
-          print("Everything goes dark.")
-          print("When you open your eyes, you realise you are in an")
-          print("ALTERNATIVE UNIVERSE! ")
+           choice3 = input("Do you use the key or leave the door?")
 
-          print(f"{name}, you discover this universe is different from your own.")
-          print("You have the power to change history.")
+           if choice3 == "use the key":
+            print("You unlock the mysterious door.")
+            print("Behind it, you discover a glowing portal.")
+            
+            choice4 = input("Do you enter the portal or stay? ")
 
-          choice4 = input("Do you change history and become a suprem overlord,"  "or do nothing? ")
+           if choice4 =="enter":
+              print("You enter the portal.")
+              print("Everything goes dark... ")
+              print("You wake up in an alternative universe!. ")
+              print(f"{name}, you discover that this universe has complete different history.")
 
-          if choice4 =="change history":
-             print("You decide to change history.")
-             print("You use your knowledge to alter important events. ")
-             print("Your influence grows stronger and stronger. ")
-             print(f"congratulation. {name}! ")
-             print("You become the SUPREME OVERLORD of the alternative universe!")
+              choice5 = input("Do you change history,do nothing" "or find a way home? ")
 
-          elif choice4 == "do nothing":
-               print("You decide yhat changing hiostpry is to dangerous.")
-               print("You leave history untouched.")
-               print(f"{name}, you begin searching for a way back home.")
-               print("THE END, history Preserved.")
+              if choice5 == "change history":
+                  print("You decide to change history.")
+                  print("You use your knowledge of history to change the important events.")
+                  print(f"{name}, ypour power grows untill you become supreme overlord! ")
+                  print("THE END, supreme overlord.")
+            
+              elif choice5 == "do nothing":
+                  print("You decide not to enterfere with history.")
+                  print(F"{name}, you spend your time searching for a way back home.")
+                  print("THE END, history preserved.")
+             
+              elif choice5 == "find a way home":
+                  print("You search the alternative universe.")
+                  print("You discover another portal.")
+                  print(f"{name}, you step through it and return to your original universe! ")
+                  print("THE END, home again.")
 
-          else:
-               print("You hestite for too long.")
-               print("The portal disappears.")
-               print(f"{name}, you are trapped in the altenative universer forever.")
-               print("THE END, lost forever.")
-       else:
-            print("You decide not to enter the portal.")
-            print("You turn around, but the temple has changed.")
-            print("You can't find your way back home.")
-            print(f"{name}, you are lost inside the temole forever ")
-            print("THE END, lost in the temple forever.")
+              else:
+                 print("That was not a valid choice")
+                 print("THE END, lost in time.")
+               
+           elif choice4 == "stay":
+               print("You decide not toi enter the portal.")
+               print(f"{name}, you become trapped inside the ancient temple.")
+               print("THE END, lost in the temple.")
     
     elif choice2 == "back":
         print("You try to return to the entrence")
